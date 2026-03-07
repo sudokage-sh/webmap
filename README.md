@@ -43,7 +43,7 @@ Total Number of Files Found: 128
 .woff2       →     10
 Report Saved → extensions_found.json
 ```
-**NOTE:** The tool continues scanning until it is stopped with CTRL+C or until there are no more targets to scan.
+**NOTE:** The tool continues scanning until it is stopped with ctrl+c or until there are no more targets to scan.
 
 ### Ethical & Legal Warning
 **Use only on targets you have explicit permission for.**  
