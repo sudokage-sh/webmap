@@ -28,15 +28,15 @@ with `--js` mode, it also downloads and scans every javascript file for leaked s
 
 ## Features
 
-- 🌐 **Real browser crawling** via Playwright — catches JS-rendered content
-- 🔒 **Scope-safe** — never leaves the target domain or its subdomains
-- 📡 **Network-layer capture** — catches files loaded via XHR/fetch, not just DOM links
-- 🎨 **Color-coded terminal output** — extensions grouped and highlighted by type
-- 🔍 **JS secret scanning** (`--js`) — 24+ patterns: AWS, GitHub, Stripe, JWT, and more
-- 📍 **Endpoint extraction** — pulls API paths from JS source
-- 🗺️ **Source map detection** — flags exposed `.map` files
-- 💾 **JSON report** — structured output for every run
-- ⌨️ **Ctrl+C safe** — graceful stop, always saves report
+- **real browser crawling** via Playwright — catches JS-rendered content
+- **scope-safe** — never leaves the target domain or its subdomains
+- **network-layer capture** — catches files loaded via XHR/fetch, not just DOM links
+- **color-coded terminal output** — extensions grouped and highlighted by type
+- **js secret scanning** (`--js`) — 24+ patterns: AWS, GitHub, Stripe, JWT, and more
+- **endpoint extraction** — pulls API paths from JS source
+- **source map detection** — flags exposed `.map` files
+- **json report** — structured output for every run
+- **ctrl+c safe** — graceful stop, always saves report
 
 ---
 
@@ -58,27 +58,27 @@ playwright install chromium
 
 ## Usage
 
-### Basic crawl
+### basic crawl
 
 ```bash
 python webmap.py -u https://target.com
 ```
 
-### Crawl + JS secret scan
+### crawl + js secret scan
 
 ```bash
 python webmap.py -u https://target.com --js
 ```
 
-### Stop anytime
+### stop anytime
 
 ```
-Ctrl+C  →  gracefully stops, saves report to extensions_found.json
+ctrl+c  →  gracefully stops, saves report to extensions_found.json
 ```
 
 ---
 
-## Example Output
+## Example Terminal Output
 
 ```
   ██╗    ██╗███████╗██████╗ ███╗   ███╗ █████╗ ██████╗
@@ -226,30 +226,5 @@ All crawling stays strictly within the target domain and its subdomains.
 > Unauthorized scanning is illegal. Always stay in-scope for bug bounty programs or limit use to assets you own.
 
 ---
-
-## Contributing
-
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-Ideas for contributions:
-- New secret patterns
-- New extension color categories  
-- Output format options (HTML report, CSV)
-- Proxy support (`--proxy`)
-- Rate limiting / delay options
-
----
-
-## Related Tools
-
-Looking for deeper analysis? Check out **[devmap](https://github.com/sudokage-sh/devmap)** — the companion tool that runs a full DevTools-powered recon: security headers, CORS, cookies, localStorage, source maps, and more.
-
-```bash
-python devmap.py -u https://target.com
-```
-
----
-
-## License
 
 [MIT](LICENSE) © sudokage-sh
