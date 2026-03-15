@@ -18,6 +18,7 @@
 ## what is webmap ?
 
 webmap is a lightweight, playwright-powered web crawler that discovers files by extension on target websites. 
+
 unlike simple http-based crawlers, webmap runs a real chromium browser — so it catches dynamically loaded resources, xhr/fetch responses, lazy-loaded assets, and anything injected by javascript at runtime.
 
 it stays strictly within scope (no crawling outside the target domain), stops cleanly with `ctrl+c`, and saves everything to json.
