@@ -7,7 +7,7 @@
    ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝
 ```
 
-**web crawler for discovering files by extension — built for bug bounty & pentesting**
+**web crawler for discovering files by extension**
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
@@ -15,13 +15,14 @@
 
 ---
 
-## What is webmap?
+## what is webmap ?
 
-webmap is a lightweight, Playwright-powered web crawler that discovers files by extension on target websites. Unlike simple HTTP-based crawlers, webmap runs a real Chromium browser — so it catches dynamically loaded resources, XHR/fetch responses, lazy-loaded assets, and anything injected by JavaScript at runtime.
+webmap is a lightweight, playwright-powered web crawler that discovers files by extension on target websites. 
+unlike simple http-based crawlers, webmap runs a real chromium browser — so it catches dynamically loaded resources, xhr/fetch responses, lazy-loaded assets, and anything injected by javascript at runtime.
 
-It stays strictly within scope (no crawling outside the target domain), stops cleanly with `Ctrl+C`, and saves everything to JSON.
+it stays strictly within scope (no crawling outside the target domain), stops cleanly with `ctrl+c`, and saves everything to json.
 
-With `--js` mode, it also downloads and scans every JavaScript file for leaked secrets, exposed endpoints, and source maps.
+with `--js` mode, it also downloads and scans every javascript file for leaked secrets, exposed endpoints, and source maps.
 
 ---
 
