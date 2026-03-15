@@ -161,36 +161,6 @@ ctrl+c  →  gracefully stops, saves report to extensions_found.json
 
 ---
 
-## JS Secret Patterns
-
-When running with `--js`, webmap scans every JavaScript file for:
-
-| Pattern | Description |
-|---|---|
-| `aws_access_key` | AWS Access Key IDs (`AKIA...`) |
-| `aws_secret_key` | AWS Secret Access Keys |
-| `google_api_key` | Google API Keys (`AIza...`) |
-| `github_token` | GitHub Personal Access Tokens (`ghp_...`) |
-| `github_pat` | GitHub Fine-grained PATs |
-| `stripe_live` / `stripe_test` | Stripe Secret Keys |
-| `slack_token` | Slack Bot/User tokens (`xox...`) |
-| `slack_webhook` | Slack Incoming Webhooks |
-| `jwt_token` | JSON Web Tokens (`eyJ...`) |
-| `bearer_token` | Bearer auth tokens |
-| `private_key` | RSA/EC/OpenSSH private keys |
-| `firebase_key` | Firebase Server Keys |
-| `sendgrid_key` | SendGrid API Keys |
-| `npm_token` | npm Access Tokens |
-| `generic_api_key` | Generic `api_key=` patterns |
-| `generic_secret` | Generic `secret_key=` patterns |
-| `generic_token` | Generic `access_token=` patterns |
-| `source_map` | Exposed source map references |
-| `internal_ip` | Internal IP addresses (10.x, 192.168.x, 172.16-31.x) |
-
-3rd-party domains (Google Analytics, GTM, CDNs) are automatically skipped to reduce noise.
-
----
-
 ## Options
 
 ```
