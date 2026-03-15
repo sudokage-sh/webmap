@@ -81,8 +81,6 @@ ctrl+c  →  gracefully stops, saves report to extensions_found.json
 ## Example Terminal Output
 
 ```
-  ██╗    ██╗███████╗██████╗ ███╗   ███╗ █████╗ ██████╗
-  ...
 
   ────────────────────────────────────────────────────────────────
   target   https://target.com
