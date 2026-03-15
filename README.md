@@ -43,11 +43,11 @@ with `--js` mode, it also downloads and scans every javascript file for leaked s
 ## Installation
 
 ```bash
-# Clone the repo
+# clone the repo
 git clone https://github.com/sudokage-sh/webmap.git
 cd webmap/webmap
 
-# Install dependencies
+# install dependencies
 pip install playwright
 playwright install chromium
 ```
@@ -204,7 +204,7 @@ options:
 
 ---
 
-## How It Works
+## How it works
 
 1. Launches a headless Chromium browser via Playwright
 2. Visits the target URL and waits for DOM content to load
